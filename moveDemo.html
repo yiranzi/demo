@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .father{
+            position: relative;
+            height: 100px;
+        }
+        .demo1{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100px;
+            height: 100px;
+            transition: transform 1s linear;
+            background-color: red;
+        }
+
+        .demo1:hover {
+            transform: translateX(200px);
+        }
+
+
+
+        .demo2{
+            position: absolute;
+            left: 0px;
+            top: 250px;
+            width: 100px;
+            height: 100px;
+            transition: transform 1s linear;
+            background-color: blue;
+        }
+
+        .demo2:hover {
+            transform: translateX(200%);
+        }
+
+        .demo3{
+            position: absolute;
+            left: 0%;
+            top: 500px;
+            width: 100px;
+            height: 100%;
+            transition: height 1s linear;
+            background-color: green;
+            transform: translateZ(0);
+        }
+
+        .demo3:hover {
+            height: 200%;
+        }
+
+
+    </style>
+</head>
+<body>
+<script>
+    //    window.requestAnimationFrame()
+</script>
+<div class="father">
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+</div>
+
+</body>
+</html>
